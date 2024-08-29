@@ -14,7 +14,7 @@ export function Country({ country: {name, currencies, region, capital, area, map
             <b>Región</b>: {region}<br/>
             <b>Capital</b>: {capital[0]}<br/>
             <b>Área</b>: {area}<br />
-            <Iframe width="100%" url={maps.googleMaps} />
+            <Iframe width="100%" url={`https://www.google.com/maps/embed?place_id=${maps.googleMaps.split('/').pop()}`} />
         </div>
     )
 }
