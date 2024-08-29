@@ -11,6 +11,9 @@ function App() {
   return (
     <DefaultLayout>
       <div className='w-[100%*] min-h-[400px] p-10 flex flex-col justify-center align-middle content-center shadow-lg shadow-cyan-500/50'>
+        <h1 className='text-4xl my-10 text-center'>
+          Consulta de paises
+        </h1>
         <FormSearch onChangeSearch={search => getCountryData(search).then(data => setCountry(data))} />
         {country && country[0] ? (
           <>

@@ -12,7 +12,7 @@ export function FormSearch({ onChangeSearch }: Props) {
     }
 
     return (
-        <div className="w-[100%] md:w-1/2 flex gap-x-4 justify-center">
+        <div className="w-[100%] flex gap-x-4 justify-center">
             <label htmlFor="email-address" className="sr-only">Email address</label>
             <input
                 required

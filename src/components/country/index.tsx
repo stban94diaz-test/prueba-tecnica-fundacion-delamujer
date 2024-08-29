@@ -8,13 +8,13 @@ interface Props {
 export function Country({ country: {name, currencies, region, capital, area, maps} }: Props) {
     return (
         <div>
-            Nombre comun: {name.common}<br/>
-            Nombre oficial: {name.official}<br/>
-            Moneda: {currencies[Object.keys(currencies)[0]].name}<br/>
-            Región: {region}<br/>
-            Capital: {capital[0]}<br/>
-            Área: {area}<br />
-            <Iframe url={maps.googleMaps} />
+            <b>Nombre comun</b>: {name.common}<br/>
+            <b>Nombre oficial</b>: {name.official}<br/>
+            <b>Moneda</b>: {currencies[Object.keys(currencies)[0]].name}<br/>
+            <b>Región</b>: {region}<br/>
+            <b>Capital</b>: {capital[0]}<br/>
+            <b>Área</b>: {area}<br />
+            <Iframe width="100%" url={maps.googleMaps} />
         </div>
     )
 }
